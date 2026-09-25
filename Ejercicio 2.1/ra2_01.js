@@ -103,3 +103,24 @@ if (edad >= 16 && disponible == true && saldo >= 3.49) {
     }
 }
 
+/*
+
+Recorrido de identificadores
+Generar mediante un bucle los identificadores:
+
+AUR-001
+AUR-002
+AUR-003
+AUR-004
+AUR-005
+AUR-006
+AUR-007
+AUR-008
+AUR-009
+AUR-010
+Mostrar cada identificador en la consola.
+*/ 
+
+for(let i =1; i<=10;i++){
+    console.log("AUR-00"+i);
+}
