@@ -122,5 +122,5 @@ Mostrar cada identificador en la consola.
 */ 
 
 for(let i =1; i<=10;i++){
-    console.log("AUR-00"+i);
+   console.log("AUR-" + String(i).padStart(3, "0"));
 }
