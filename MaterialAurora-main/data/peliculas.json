@@ -1,0 +1,112 @@
+[
+  {
+    "titulo": "Interstellar",
+    "director": "Christopher Nolan",
+    "anio": 2014,
+    "genero": "Ciencia ficción",
+    "precio": 3.99,
+    "disponible": true,
+    "valoracion": 4.8,
+    "sinopsis": "Un grupo de exploradores viaja más allá de nuestra galaxia en busca de un nuevo hogar para la humanidad.",
+    "imagen": "img/interstellar.jpg"
+  },
+  {
+    "titulo": "Mad Max: Fury Road",
+    "director": "George Miller",
+    "anio": 2015,
+    "genero": "Acción",
+    "precio": 3.49,
+    "disponible": false,
+    "valoracion": 4.7,
+    "sinopsis": "Max se une a Furiosa en una huida desesperada a través de un desierto devastado.",
+    "imagen": "img/mad-max-fury-road.jpg"
+  },
+  {
+    "titulo": "The Grand Budapest Hotel",
+    "director": "Wes Anderson",
+    "anio": 2014,
+    "genero": "Comedia",
+    "precio": 2.49,
+    "disponible": true,
+    "valoracion": 4.6,
+    "sinopsis": "Las aventuras de un conserje y su joven ayudante en un famoso hotel europeo.",
+    "imagen": "img/the-grand-budapest-hotel.jpg"
+  },
+  {
+    "titulo": "Whiplash",
+    "director": "Damien Chazelle",
+    "anio": 2014,
+    "genero": "Drama",
+    "precio": 2.99,
+    "disponible": true,
+    "valoracion": 4.8,
+    "sinopsis": "Un joven batería busca alcanzar la excelencia bajo la exigente dirección de un profesor.",
+    "imagen": "img/whiplash.jpg"
+  },
+  {
+    "titulo": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "anio": 2001,
+    "genero": "Animación",
+    "precio": 2.49,
+    "disponible": true,
+    "valoracion": 4.9,
+    "sinopsis": "Una niña llega a un mundo fantástico poblado por espíritus y criaturas extraordinarias.",
+    "imagen": "img/spirited-away.jpg"
+  },
+  {
+    "titulo": "Arrival",
+    "director": "Denis Villeneuve",
+    "anio": 2016,
+    "genero": "Ciencia ficción",
+    "precio": 2.99,
+    "disponible": true,
+    "valoracion": 4.6,
+    "sinopsis": "Una lingüista intenta comunicarse con unas misteriosas criaturas llegadas del espacio.",
+    "imagen": "img/arrival.jpg"
+  },
+  {
+    "titulo": "Parasite",
+    "director": "Bong Joon-ho",
+    "anio": 2019,
+    "genero": "Drama",
+    "precio": 3.49,
+    "disponible": true,
+    "valoracion": 4.9,
+    "sinopsis": "Una familia consigue introducirse progresivamente en la vida de otra familia de una clase social privilegiada.",
+    "imagen": "img/parasite.jpg"
+  },
+  {
+    "titulo": "The Matrix",
+    "director": "The Wachowskis",
+    "anio": 1999,
+    "genero": "Ciencia ficción",
+    "precio": 2.99,
+    "disponible": true,
+    "valoracion": 4.7,
+    "sinopsis": "Un programador descubre que la realidad que conoce oculta una verdad mucho más compleja.",
+    "imagen": "img/the-matrix.jpg"
+  },
+  {
+    "titulo": "Her",
+    "director": "Spike Jonze",
+    "anio": 2013,
+    "genero": "Romance",
+    "precio": 2.49,
+    "disponible": true,
+    "valoracion": 4.4,
+    "sinopsis": "Un hombre desarrolla una relación inesperada con un avanzado sistema operativo.",
+    "imagen": "img/her.jpg"
+  },
+  {
+    "titulo": "Get Out",
+    "director": "Jordan Peele",
+    "anio": 2017,
+    "genero": "Terror",
+    "precio": 3.49,
+    "disponible": true,
+    "valoracion": 4.5,
+    "sinopsis": "Una visita aparentemente normal a la familia de su pareja se transforma en una experiencia inquietante.",
+    "imagen": "img/get-out.jpg"
+  }
+]

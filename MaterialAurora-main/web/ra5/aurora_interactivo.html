@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videoclub Aurora · Interactivo</title>
+    <link rel="stylesheet" href="../../css/aurora.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__inner">
+        <a class="brand" href="#inicio">
+            <span class="brand__mark">A</span>
+            <span>
+                <span class="brand__title">VIDECLUB AURORA</span>
+                <span class="brand__tagline">Cine para cada momento</span>
+            </span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#alquiler">Mi alquiler</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero" id="inicio">
+        <div class="hero__content">
+            <span class="kicker">Videoclub Aurora</span>
+            <h1>Cine para cada momento</h1>
+            <p>La interfaz está preparada. El comportamiento se implementa con JavaScript durante las actividades.</p>
+        </div>
+    </section>
+
+    <section class="section panel">
+        <div class="section__head">
+            <h2>Buscar y filtrar</h2>
+        </div>
+
+        <div class="filters">
+            <div class="field">
+                <label for="busqueda">Buscar por título</label>
+                <input id="busqueda" type="search" placeholder="Ej.: Interstellar">
+            </div>
+
+            <div class="field">
+                <label for="genero">Género</label>
+                <select id="genero">
+                    <option value="">Todos</option>
+                    <option value="Acción">Acción</option>
+                    <option value="Animación">Animación</option>
+                    <option value="Ciencia ficción">Ciencia ficción</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Terror">Terror</option>
+                </select>
+            </div>
+
+            <label class="checkbox" for="soloDisponibles">
+                <input id="soloDisponibles" type="checkbox">
+                Solo disponibles
+            </label>
+
+            <div class="field">
+                <label for="orden">Ordenar</label>
+                <select id="orden">
+                    <option value="titulo">Título A-Z</option>
+                    <option value="precioAsc">Precio menor</option>
+                    <option value="precioDesc">Precio mayor</option>
+                    <option value="valoracionDesc">Valoración mayor</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="estado" class="status">Catálogo pendiente de cargar.</p>
+    </section>
+
+    <section class="section">
+        <div class="section__head">
+            <h2>Catálogo</h2>
+        </div>
+        <div id="catalogo" class="catalog"></div>
+    </section>
+
+    <section class="section panel" id="alquiler">
+        <div class="section__head">
+            <h2>Mi alquiler</h2>
+        </div>
+
+        <div id="listaAlquiler" class="notice">Todavía no has seleccionado ninguna película.</div>
+
+        <div class="rental" style="margin-top: 16px;">
+            <div class="rental__numbers">
+                <span>Películas: <strong id="numeroAlquiler">0</strong></span>
+                <span>Total: <strong id="totalAlquiler">0,00 €</strong></span>
+            </div>
+            <span></span>
+            <button id="vaciarAlquiler" class="btn btn--secondary" type="button">Vaciar alquiler</button>
+        </div>
+    </section>
+
+    <section class="section panel" id="registro">
+        <div class="section__head">
+            <h2>Crear cuenta</h2>
+        </div>
+
+        <form id="formRegistro" class="form-grid">
+            <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required minlength="3">
+            </div>
+
+            <div class="field">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" min="16" max="120" required>
+            </div>
+
+            <div class="field full">
+                <button class="btn" type="submit">Crear cuenta</button>
+            </div>
+        </form>
+
+        <p id="mensajeRegistro" class="status"></p>
+    </section>
+</main>
+
+<dialog id="dialogoPelicula">
+    <div class="dialog__inner">
+        <div id="detallePelicula"></div>
+        <div class="actions" style="margin-top: 18px;">
+            <button id="cerrarDialogo" class="btn btn--secondary" type="button">Cerrar</button>
+        </div>
+    </div>
+</dialog>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <small>Videoclub Aurora · Material de prácticas de JavaScript</small>
+    </div>
+</footer>
+
+</body>
+</html>

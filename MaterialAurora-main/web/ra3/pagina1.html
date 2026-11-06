@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Web de demostración - Inicio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #dbeafe;
+            color: #1e3a8a;
+        }
+
+        .navegador {
+            background: #1e293b;
+            padding: 15px;
+            color: white;
+        }
+
+        .barra {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .circulos {
+            display: flex;
+            gap: 6px;
+        }
+
+        .circulo {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .rojo { background: #ef4444; }
+        .amarillo { background: #facc15; }
+        .verde { background: #22c55e; }
+
+        .direccion {
+            flex: 1;
+            background: #475569;
+            padding: 9px 15px;
+            border-radius: 20px;
+            color: white;
+            font-size: 14px;
+        }
+
+        nav {
+            background: #2563eb;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contenido {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #0002;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navegador">
+        <div class="barra">
+            <div class="circulos">
+                <span class="circulo rojo"></span>
+                <span class="circulo amarillo"></span>
+                <span class="circulo verde"></span>
+            </div>
+            <div class="direccion">www.misitio.com/inicio</div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="pagina1.html">Inicio</a>
+        <a href="pagina2.html">Servicios</a>
+        <a href="pagina3.html">Contacto</a>
+    </nav>
+
+    <main>
+        <div class="contenido">
+            <h1>Bienvenido a nuestra web</h1>
+            <p>Esta es la página de inicio.</p>
+            <p>Estás navegando por la primera página.</p>
+            <a class="boton" href="pagina2.html">Conocer nuestros servicios →</a>
+        </div>
+    </main>
+
+</body>
+</html>

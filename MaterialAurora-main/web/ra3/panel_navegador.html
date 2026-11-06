@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aurora · Panel del navegador</title>
+    <link rel="stylesheet" href="../../css/aurora.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__inner">
+        <a class="brand" href="#">
+            <span class="brand__mark">A</span>
+            <span>
+                <span class="brand__title">VIDECLUB AURORA</span>
+                <span class="brand__tagline">Cine para cada momento</span>
+            </span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#alquiler">Mi alquiler</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main simple-page">
+    <section class="hero" id="inicio">
+        <div class="hero__content">
+            <span class="kicker">RA3 · Objetos del navegador</span>
+            <h1>Panel del navegador</h1>
+            <p>La información se rellenará mediante JavaScript usando objetos predefinidos del navegador.</p>
+        </div>
+    </section>
+
+    <section class="section panel">
+        <div class="section__head">
+            <h2>Información del navegador</h2>
+        </div>
+        <div id="informacionNavegador" class="info-grid">
+            <div class="info-item"><strong>Título</strong><span>—</span></div>
+            <div class="info-item"><strong>URL</strong><span>—</span></div>
+            <div class="info-item"><strong>Idiomas</strong><span>—</span></div>
+            <div class="info-item"><strong>Dimensiones de ventana</strong><span>—</span></div>
+            <div class="info-item"><strong>Dimensiones de pantalla</strong><span>—</span></div>
+            <div class="info-item"><strong>UserAgent</strong><span id="usuarioCookie">—</span></div>
+        </div>
+    </section>
+
+    <section class="section panel">
+        <div class="section__head">
+            <h2>Documento compuesto</h2>
+        </div>
+        <p class="notice">El iframe está preparado para la demostración de documentos compuestos.</p>
+        <iframe src="pagina1.html" title="Demostración de documento compuesto"></iframe>
+        <button class="btn" type="button">Atrás</button>
+        <button class="btn" type="button">Adelante</button>
+    </section>
+
+    <section class="section panel">
+        <p id = "nombre-usuario" class="notice">Anónimo</p>
+        <button class="btn" type="button">Registrar usuario</button>
+        <button class="btn" type="button">Borrar cookie</button>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <small>Videoclub Aurora · Material de prácticas de JavaScript</small>
+    </div>
+</footer>
+
+
+<script src="ejercicio3_1.js"></script>
+<script src="ejercicio3_2.js"></script>
+</body>
+</html>

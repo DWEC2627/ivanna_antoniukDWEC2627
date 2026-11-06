@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Videoclub Aurora · Servidor real</title>
+    <link rel="stylesheet" href="../../css/aurora.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__inner">
+        <a class="brand" href="#inicio">
+            <span class="brand__mark">A</span>
+            <span>
+                <span class="brand__title">VIDECLUB AURORA</span>
+                <span class="brand__tagline">Cine para cada momento</span>
+            </span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#alquiler">Mi alquiler</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero">
+        <div class="hero__content">
+            <span class="kicker">Práctica conjunta cliente + servidor</span>
+            <h1>Videoclub Aurora · Servidor real</h1>
+            <p>La página sigue siendo la misma Aurora. Solo cambia el origen de los datos del catálogo.</p>
+        </div>
+    </section>
+
+    <section class="section panel">
+        <div class="section__head">
+            <h2>Catálogo</h2>
+        </div>
+        <p class="notice">
+            El catálogo se obtiene desde
+            <code>http://localhost:8080/api/peliculas</code>.
+        </p>
+        <p id="estado" class="status">Esperando conexión con el servidor.</p>
+    </section>
+
+    <section class="section">
+        <div id="catalogo" class="catalog"></div>
+    </section>
+
+    <section class="section panel" id="alquiler">
+        <div class="section__head">
+            <h2>Mi alquiler</h2>
+        </div>
+        <div id="listaAlquiler" class="notice">Todavía no has seleccionado ninguna película.</div>
+        <div class="rental" style="margin-top:16px;">
+            <div class="rental__numbers">
+                <span>Películas: <strong id="numeroAlquiler">0</strong></span>
+                <span>Total: <strong id="totalAlquiler">0,00 €</strong></span>
+            </div>
+            <span></span>
+            <button id="vaciarAlquiler" class="btn btn--secondary" type="button">Vaciar alquiler</button>
+        </div>
+    </section>
+</main>
+
+<dialog id="dialogoPelicula">
+    <div class="dialog__inner">
+        <div id="detallePelicula"></div>
+        <div class="actions" style="margin-top:18px;">
+            <button id="cerrarDialogo" class="btn btn--secondary" type="button">Cerrar</button>
+        </div>
+    </div>
+</dialog>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <small>Videoclub Aurora · Material de prácticas de JavaScript</small>
+    </div>
+</footer>
+
+</body>
+</html>

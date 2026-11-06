@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Leandro",
+    "edad": 19,
+    "saldo": 20.50,
+    "enAlquiler": 0
+  },
+  {
+    "nombre": "Azucena",
+    "edad": 25,
+    "saldo": 9.00,
+    "enAlquiler": 0
+  }
+]

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aurora · Ejercicios integradores</title>
+    <link rel="stylesheet" href="../../css/aurora.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__inner">
+        <a class="brand" href="#inicio">
+            <span class="brand__mark">A</span>
+            <span>
+                <span class="brand__title">VIDEOCLUB AURORA</span>
+                <span class="brand__tagline">Cine para cada momento</span>
+            </span>
+        </a>
+        <nav class="nav" aria-label="Ejercicios">
+            <a href="#buscador">Buscador</a>
+            <a href="#alquiler">Alquiler</a>
+            <a href="#promocion">Promoción</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="hero" id="inicio">
+        <div class="hero__content">
+            <span class="kicker">RA3 · Ejercicios integradores</span>
+            <h1>Videoclub Aurora</h1>
+            <p>Busca películas, prepara un alquiler o calcula la promoción del mejor dúo.</p>
+        </div>
+    </section>
+
+    <section class="section panel" id="buscador">
+        <div class="section__head">
+            <h2>1. Buscador de sesión de cine</h2>
+        </div>
+        <p>Al pulsar el botón, introduce el título y el género mediante ventanas de diálogo. Deja un criterio vacío para no limitar la búsqueda.</p>
+        <button class="btn" type="button">Buscar</button>
+        <p id="estadoBusqueda" class="status">Todavía no se ha realizado ninguna búsqueda.</p>
+        <div id="resultadosBusqueda" class="notice">Aquí aparecerán los resultados.</div>
+        <p id="anchoVentanaBusqueda" class="notice">Ancho de la ventana: —</p>
+    </section>
+
+    <section class="section panel" id="alquiler">
+        <div class="section__head">
+            <h2>2. Alquiler con presupuesto</h2>
+        </div>
+        <p>Presupuesto disponible: 7,00 €. Introduce el título completo mediante una ventana de diálogo para añadir una película.</p>
+        <button class="btn" type="button">Añadir al alquiler</button>
+        <button class="btn" type="button" ">Vaciar alquiler</button>
+        <p id="mensajeAlquiler" class="status"></p>
+        <div id="listaAlquiler" class="notice">Todavía no has seleccionado ninguna película.</div>
+        <div class="rental" style="margin-top: 16px;">
+            <div class="rental__numbers">
+                <span>Películas: <strong id="numeroAlquiler">0</strong></span>
+                <span>Total: <strong id="totalAlquiler">0,00 €</strong></span>
+                <span>Restante: <strong id="restanteAlquiler">7,00 €</strong></span>
+            </div>
+        </div>
+        <p id="anchoVentanaAlquiler" class="notice">Ancho de la ventana: —</p>
+    </section>
+
+    <section class="section panel" id="promocion">
+        <div class="section__head">
+            <h2>3. La promoción del mejor dúo</h2>
+        </div>
+        <p>Encuentra la pareja de películas disponibles con mayor valoración conjunta por un máximo de 6,00 €.</p>
+        <button class="btn" type="button">Calcular promoción</button>
+        <div id="resultadoPromocion" class="notice">Pulsa el botón para calcular la promoción.</div>
+        <p id="anchoVentanaPromocion" class="notice">Ancho de la ventana: —</p>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <small>Videoclub Aurora · Material de prácticas de JavaScript</small>
+    </div>
+</footer>
+
+</body>
+</html>
